@@ -15,3 +15,6 @@ RUN set -xe; \
 FROM scratch
 
 COPY --from=build /server /server
+
+CMD ["/server"]
+EXPOSE 8080
